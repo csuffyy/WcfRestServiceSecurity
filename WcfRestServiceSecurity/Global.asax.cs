@@ -50,7 +50,7 @@ namespace WcfRestServiceSecurity1
         {
             var ctx = WebOperationContext.Current;
             var auth = ctx.IncomingRequest.Headers[HttpRequestHeader.Authorization];
-            if (string.IsNullOrEmpty(auth) || auth != "fangxing/123")
+            if (string.IsNullOrEmpty(auth) || auth != "fangxing123")
             {
                 ctx.OutgoingResponse.StatusCode = HttpStatusCode.MethodNotAllowed;
                 return false;

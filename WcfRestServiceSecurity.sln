@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfRestServiceSecurity1", "WcfRestServiceSecurity1\WcfRestServiceSecurity1.csproj", "{E354F9D7-549B-460F-BCB2-E4ED65240D43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfRestServiceSecurity", "WcfRestServiceSecurity\WcfRestServiceSecurity.csproj", "{E354F9D7-549B-460F-BCB2-E4ED65240D43}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfRestSecurityClient", "WcfRestSecurityClient\WcfRestSecurityClient.csproj", "{1BA8ED43-E095-4E36-A64E-8459346B6711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfRestSecurityClient.Net4.5", "WcfRestSecurityClient.Net4.5\WcfRestSecurityClient.Net4.5.csproj", "{1BADC81D-FEF8-4237-9169-68BB501F9A80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,16 @@ Global
 		{1BA8ED43-E095-4E36-A64E-8459346B6711}.Release|Mixed Platforms.Build.0 = Release|x86
 		{1BA8ED43-E095-4E36-A64E-8459346B6711}.Release|x86.ActiveCfg = Release|x86
 		{1BA8ED43-E095-4E36-A64E-8459346B6711}.Release|x86.Build.0 = Release|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Debug|x86.ActiveCfg = Debug|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Debug|x86.Build.0 = Debug|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Release|Any CPU.ActiveCfg = Release|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Release|x86.ActiveCfg = Release|x86
+		{1BADC81D-FEF8-4237-9169-68BB501F9A80}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,8 +18,6 @@ using System.Net;
 using System.Runtime.Serialization.Json;
 using System.IO;
 using System.Runtime.Serialization;
-using Microsoft.Http;
-using Microsoft.Http.Headers;
 
 namespace WcfRestSecurityClient
 {
@@ -30,28 +31,28 @@ namespace WcfRestSecurityClient
             InitializeComponent();
         }
 
-        private void DisplayResult(HttpResponseMessage response)
+        private async Task DisplayResult(HttpResponseMessage response)
         {
             txtStatusCode.Text = response.StatusCode.ToString();
-            this.textBox1.Text = response.Content.ReadAsString();
+            this.textBox1.Text = await response.Content.ReadAsStringAsync();
         }
 
-        private void btnInvokeWithAuth_Click(object sender, RoutedEventArgs e)
+        private async void btnInvokeWithAuth_Click(object sender, RoutedEventArgs e)
         {
             var url = txtUrl.Text;
             var client = new HttpClient();
-            //client.DefaultHeaders.Add("Authorization", "fangxing123");
-            client.DefaultHeaders.Authorization = new Credential("fangxing123");
-            var resp = client.Get(url);
-            DisplayResult(resp);
+            //client.DefaultRequestHeaders.Add("Authorization", "fangxing123");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("fangxing123");
+            var resp = await client.GetAsync(url);
+            await DisplayResult(resp);
         }
 
-        private void btnInvokeWithoutAuth_Click(object sender, RoutedEventArgs e)
+        private async void btnInvokeWithoutAuth_Click(object sender, RoutedEventArgs e)
         {
             var url = txtUrl.Text;
             var client = new HttpClient();
-            var resp = client.Get(url);
-            DisplayResult(resp);
+            var resp = await client.GetAsync(url);
+            await DisplayResult(resp);
         }
     }
 }
