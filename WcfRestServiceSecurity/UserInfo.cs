@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace WcfRestServiceSecurity1
+namespace WcfRestServiceSecurity
 {
     [DataContract]
     public class UserInfo

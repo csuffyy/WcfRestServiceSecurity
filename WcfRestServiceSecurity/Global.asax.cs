@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Net;
+using System.ServiceModel;
 using System.ServiceModel.Activation;
+using System.ServiceModel.Web;
 using System.Web;
 using System.Web.Routing;
-using System.ServiceModel;
-using System.Configuration;
-using System.ServiceModel.Web;
-using System.Net;
 
-namespace WcfRestServiceSecurity1
+namespace WcfRestServiceSecurity
 {
     public class Global : HttpApplication
     {

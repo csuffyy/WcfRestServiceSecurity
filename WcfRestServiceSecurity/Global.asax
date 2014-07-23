@@ -1,1 +1,1 @@
-<%@ Application Codebehind="Global.asax.cs" Inherits="WcfRestServiceSecurity1.Global" Language="C#" %>
+<%@ Application Codebehind="Global.asax.cs" Inherits="WcfRestServiceSecurity.Global" Language="C#" %>
